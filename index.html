@@ -3,21 +3,30 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Drag and Drop here</title>
-<link rel="stylesheet" type="text/css" href="assets/Semantic-UI-CSS-master/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="assets/Semantic-UI-CSS-master/index.css">
+<link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-css/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-<script src="assets/Semantic-UI-CSS-master/semantic.min.js"></script>
-<script src="assets/Semantic-UI-CSS-master/index.js"></script>
+<script src="node_modules/semantic-ui-css/semantic.min.js"></script>
+<script src="node_modules/sortablejs/Sortable.js"></script>
 </head>
-<body>
+<body class="ui container">
 	<h2 class="ui center aligned icon header">
-	  <i class="circular users icon"></i>
-	  Like Or Don't
+
+		<div id="counter-div" class="ui inverted segment">
+		  <div class="ui green inverted statistic">
+		    <div id="like" class="value"></div>
+		  </div>
+	  	<i id="icon-id" class="circular users icon"></i>
+		  <div class="ui red inverted statistic">
+		    <div id="dont" class="value"></div>
+		  </div>
+		</div>
 	</h2>
-	<div id="main-div" class="ui placeholder segment">
+	
+	<div id="main-div" class="ui center placeholder segment">
 	  <div class="ui two column very relaxed stackable grid">
 	    <div class="column">
 		  <section id="leftBox" class="ui images">
@@ -42,9 +51,9 @@
 			<!-- P -->
 			<img id="pic7" class="ui tiny circular image" src="assets/images/Chef.jpg" />
 		  </section>
-		  <h4 class="ui horizontal inverted divider">
+		  <h3 class="ui horizontal inverted divider">
 	      	<i class="icon header thumbs up outline icon-section"></i>		    
-		  </h4>
+		  </h3>
 	     </div>
 	  <div class="middle aligned column">
 	    <section id="rightBox" class="ui images">
@@ -52,14 +61,16 @@
 			<img id="pic8" class="ui tiny circular image" src="assets/images/DRose.jpg" />
 	    
 		</section>
-			 <h4 class="ui horizontal inverted divider">
+			 <h3 class="ui horizontal inverted divider">
 		    	<i class="icon header thumbs down outline icon-section"></i>		    
-			 </h4>
+			 </h3>
 	    </div>
 	  </div>
 	  <div class="ui vertical divider" hidden>
 	    Or
 	  </div>
 	</div>
+	
+<script src="index.js"></script>
 </body>
 </html>

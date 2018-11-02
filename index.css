@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+section{
+	height : 200px;
+	padding : 20px;
+	
+}
+
+.icon {
+	color : black;
+	
+}
+
+#counter-div{
+	/* max-width : 120px; */	
+}
+
+#icon-id{
+	display : inline-block;
+}
